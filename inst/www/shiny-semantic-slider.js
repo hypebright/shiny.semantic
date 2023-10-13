@@ -56,7 +56,7 @@ $.extend(semanticSliderBinding, {
     }
   },
   getType: function(el) {
-    if ($(el).data('ticks')) {
+    if ($(el).data('ticks') || $(el).hasClass('range')) {
       return false;
     } else {
       return 'shiny.number';
